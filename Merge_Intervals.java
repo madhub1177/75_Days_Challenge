@@ -11,7 +11,7 @@ public class Merge_Intervals {
     public static int[][] merge(int[][] intervals) {
 
         Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));
-        Stack<int[]> stack=new Stack();
+        Stack<int[]> stack=new Stack<int[]>();
         stack.add(intervals[0]);
         
         for(int i=1;i<intervals.length;i++){ 
